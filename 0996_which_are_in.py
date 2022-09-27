@@ -19,7 +19,7 @@
 
 a1 = ["live", "arp", "strong"]
 a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
-r = ['arp', 'live', 'strong']
+ra = ['arp', 'live', 'strong']
 
 
 def in_array(array1, array2):
