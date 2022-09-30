@@ -32,12 +32,8 @@
 # (tribonacci([1, 1, 1], 10), [1, 1, 1, 3, 5, 9, 17, 31, 57, 105]
 
 def tribonacci(signature, n):
-    if n == 0:
-        return []
-    elif n == 1:
-        return signature[:1]
-    elif n == 2:
-        return signature[:2]
+    if n <= 2:
+        return signature[:n]
     else:
         for i in range(n-3):
             signature.append(sum(signature[i:i+3], 0))
